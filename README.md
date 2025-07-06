@@ -4,6 +4,21 @@ A document-based question answering API using FastAPI, LangChain, OpenAI, and Ch
 
 ---
 
+## Features & Functionality
+
+- **User Authentication:** Register and login with JWT-based authentication. All document and vector operations are user-specific.
+- **User-Specific RAG:** All retrieval-augmented generation (RAG) operations (indexing, search, answer, delete) are isolated per user—users can only access their own documents and answers.
+- **Document Upload & Indexing:** Upload PDF, DOCX, or TXT files. Each file is chunked, embedded, and indexed for semantic search.
+- **Document Listing & Deletion:** List and delete your own uploaded documents. Each user only sees their own documents.
+- **Question Answering:**
+  - **Single Response:** Submit a question and receive a complete answer in one response.
+  - **Streaming Response:** Submit a question and receive the answer as a stream of tokens (see two separate buttons in the UI).
+- **Semantic Search:** Uses OpenAI embeddings and ChromaDB for fast, relevant context retrieval.
+- **Frontend UI:** Simple web interface for uploading, listing, deleting documents, and asking questions (with both streaming and non-streaming options).
+- **API Documentation:** Interactive docs available at `/docs`.
+
+---
+
 ## Setup & Run
 
 ### 1. **Clone the repository**
