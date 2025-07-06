@@ -90,3 +90,8 @@ docker-compose up --build
 
 ## Notes
 - All document and vector operations are user-specific and require authentication.
+
+---
+
+## Screenshot
+![image](https://github.com/user-attachments/assets/663f8f4c-3cb3-4f03-99e3-3cb549735b6d)
